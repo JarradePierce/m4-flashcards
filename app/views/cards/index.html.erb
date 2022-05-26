@@ -1,0 +1,11 @@
+<% @cards.each do |card| %>
+  <div class="card">
+    <h2><%= card.title %></h2>
+    <h3><%= card.body %></h3>
+    <div class="card-answers">
+      <button><%= card.answer1 %></button>
+      <button><%= card.answer2 %></button>
+      <button><%= card.answer3 %></button>
+    </div>
+  </div>
+<% end %>
